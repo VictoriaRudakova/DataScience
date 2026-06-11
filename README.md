@@ -1,18 +1,22 @@
-This repository contains my Python practice files created while learning the basics of programming and preparing for further data science topics.
+DataScience
 
-At this stage, the project focuses on core Python concepts such as functions, arguments, lambda expressions, map(), filter(), variable scope, and basic string operations.
+This repository contains my Python learning and practice files.
+The main goal of this project is to improve my understanding of Python fundamentals before moving deeper into data science topics.
 
-About the project
+Currently, the repository includes small examples related to functions, arguments, lambda expressions, map(), filter(), scope, and basic string operations.
 
-The goal of this repository is to collect small Python examples and practice tasks in one place.
+About
 
-The current files are mostly focused on Python fundamentals. Later, this repository can be expanded with real data science topics such as NumPy, Pandas, data visualization, statistics, and machine learning.
+This is a personal learning repository where I collect Python practice tasks and examples.
+
+The project is not a full data science project yet. It is the first step toward learning data analysis, automation, and machine learning with Python.
 
 Technologies
 Python 3
-PyCharm / any Python IDE
 GitHub
-Topics covered
+PyCharm or any Python IDE
+Topics Practiced
+Python basics
 Functions
 Positional arguments
 *args
@@ -20,86 +24,82 @@ Positional arguments
 Lambda functions
 map()
 filter()
-Local and global scope
+Local and global variables
 String length
 String indexing
-Basic Python scripts
-Repository structure
+Project Structure
 DataScience/
 │
 ├── args_kwargs.py   # Practice with *args and **kwargs
-├── lambda.py        # Practice with map() and functions
-├── lambda1.py       # Practice with map() and string checks
+├── lambda.py        # Practice with map() and regular functions
+├── lambda1.py       # Practice with map() and string conditions
 ├── lambda2.py       # Practice with filter()
 ├── lambda3.py       # Practice with lambda, map() and filter()
 ├── main.py          # Basic Python script
 ├── new.py           # Practice with args and kwargs together
 ├── scope.py         # Practice with local and global scope
 └── test.py          # Practice with strings and indexes
-How to run the files
-Clone the repository:
-git clone https://github.com/VictoriaRudakova/DataScience.git
-Open the project folder:
-cd DataScience
-Run any Python file:
-python args_kwargs.py
-
-Example:
-
-python lambda3.py
-
-If python does not work, use:
-
-python3 lambda3.py
-Example topics
-*args
-
-Used when a function can receive any number of positional arguments.
-
-def example_args(*args):
+File Descriptions
+File	Description
+args_kwargs.py	Examples of using *args and **kwargs in Python functions
+lambda.py	Example of using map() with a regular function
+lambda1.py	Practice with map() and checking string values
+lambda2.py	Practice with filter()
+lambda3.py	Practice with lambda, map() and filter()
+main.py	Basic starter Python file
+new.py	Combined practice with positional and keyword arguments
+scope.py	Example of local and global variable scope
+test.py	Practice with string length and indexing
+Code Examples
+Example of *args
+def print_args(*args):
     print(args)
 
-example_args(1, 2, 3)
-**kwargs
-
-Used when a function can receive any number of named arguments.
-
-def example_kwargs(**kwargs):
+print_args(1, 2, 3)
+Example of **kwargs
+def print_kwargs(**kwargs):
     print(kwargs)
 
-example_kwargs(name="Victoria", role="QA")
-Lambda function
-
-A short anonymous function.
-
+print_kwargs(name="Victoria", role="QA")
+Example of lambda
 numbers = [1, 2, 3, 4, 5]
 
 result = list(map(lambda number: number * 2, numbers))
 
 print(result)
-filter()
-
-Used to filter values from a list based on a condition.
-
+Example of filter()
 numbers = [1, 2, 3, 4, 5, 6]
 
 odd_numbers = list(filter(lambda number: number % 2 == 1, numbers))
 
 print(odd_numbers)
-Current status
+How to Run
+Download or clone the repository.
+Open the project in PyCharm, VS Code, or another Python IDE.
+Choose any .py file.
+Run the file.
 
-This is a learning repository.
-It is currently focused on Python basics and will be improved step by step.
+Example command:
 
-Future improvements
+python lambda3.py
 
-Planned topics to add:
+or:
 
-NumPy basics
-Pandas basics
-Data cleaning examples
+python3 lambda3.py
+Current Status
+
+The repository is currently focused on Python basics.
+
+Future topics may include:
+
+NumPy
+Pandas
 Working with CSV files
-Data visualization with Matplotlib
-Simple statistics examples
-Basic machine learning examples
-Jupyter Notebook examples
+Data cleaning
+Data visualization
+Statistics basics
+Jupyter Notebook
+Simple machine learning examples
+Purpose
+
+This repository helps me track my learning progress and keep Python practice examples in one place.
