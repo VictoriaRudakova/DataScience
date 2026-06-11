@@ -1,114 +1,105 @@
-A small Python learning repository with basic examples of Python syntax, functions and functional programming concepts.
+This repository contains my Python practice files created while learning the basics of programming and preparing for further data science topics.
 
-This project contains simple practice scripts created while learning Python fundamentals. The examples cover working with functions, *args, **kwargs, lambda, map(), filter(), variable scope and string indexing.
+At this stage, the project focuses on core Python concepts such as functions, arguments, lambda expressions, map(), filter(), variable scope, and basic string operations.
 
+About the project
+
+The goal of this repository is to collect small Python examples and practice tasks in one place.
+
+The current files are mostly focused on Python fundamentals. Later, this repository can be expanded with real data science topics such as NumPy, Pandas, data visualization, statistics, and machine learning.
+
+Technologies
+Python 3
+PyCharm / any Python IDE
+GitHub
 Topics covered
-Python functions
+Functions
 Positional arguments
 *args
 **kwargs
-Lambda expressions
+Lambda functions
 map()
 filter()
-Variable scope
-String length and indexing
-Basic script execution in Python
-Project structure
+Local and global scope
+String length
+String indexing
+Basic Python scripts
+Repository structure
 DataScience/
 │
-├── args_kwargs.py   # Examples of *args and **kwargs
-├── lambda.py        # Example of map() with a regular function
-├── lambda1.py       # Example of map() with string checking
-├── lambda2.py       # Examples of filter()
-├── lambda3.py       # Examples of lambda with map() and filter()
-├── main.py          # Basic PyCharm starter script
-├── new.py           # Combined example of *args and **kwargs
-├── scope.py         # Example of local and global variable scope
-└── test.py          # String length and indexing practice
-Requirements
-Python 3.x
-
-No external libraries are required.
-
-How to run
-
+├── args_kwargs.py   # Practice with *args and **kwargs
+├── lambda.py        # Practice with map() and functions
+├── lambda1.py       # Practice with map() and string checks
+├── lambda2.py       # Practice with filter()
+├── lambda3.py       # Practice with lambda, map() and filter()
+├── main.py          # Basic Python script
+├── new.py           # Practice with args and kwargs together
+├── scope.py         # Practice with local and global scope
+└── test.py          # Practice with strings and indexes
+How to run the files
 Clone the repository:
-
 git clone https://github.com/VictoriaRudakova/DataScience.git
+Open the project folder:
 cd DataScience
-
-Run any script with Python:
-
+Run any Python file:
 python args_kwargs.py
 
-or:
+Example:
 
 python lambda3.py
 
-On some systems, you may need to use:
+If python does not work, use:
 
 python3 lambda3.py
-Examples
-*args and **kwargs
+Example topics
+*args
 
-The repository contains examples of functions that accept a variable number of arguments:
+Used when a function can receive any number of positional arguments.
 
-def func_with_kwargs(**kwargs):
-    print(kwargs)
-
-func_with_kwargs(first=1, second=2, third=3)
-
-And:
-
-def func_with_args(*args):
+def example_args(*args):
     print(args)
 
-func_with_args(1, 2, 3)
-map()
+example_args(1, 2, 3)
+**kwargs
 
-Example of applying a function to every item in a list:
+Used when a function can receive any number of named arguments.
 
-def sum_of_two_numbers(x):
-    return x + x
+def example_kwargs(**kwargs):
+    print(kwargs)
 
-number_list = [1, 2, 3, 4, 5, 6, 7]
+example_kwargs(name="Victoria", role="QA")
+Lambda function
 
-print(list(map(sum_of_two_numbers, number_list)))
+A short anonymous function.
+
+numbers = [1, 2, 3, 4, 5]
+
+result = list(map(lambda number: number * 2, numbers))
+
+print(result)
 filter()
 
-Example of filtering odd numbers:
+Used to filter values from a list based on a condition.
 
-def is_number_odd(number):
-    return number % 2 == 1
+numbers = [1, 2, 3, 4, 5, 6]
 
-number_list = [1, 2, 3, 4, 5, 6, 7]
+odd_numbers = list(filter(lambda number: number % 2 == 1, numbers))
 
-print(list(filter(is_number_odd, number_list)))
-Lambda expression
+print(odd_numbers)
+Current status
 
-Example of using lambda with map() and filter():
+This is a learning repository.
+It is currently focused on Python basics and will be improved step by step.
 
-number_list = [1, 2, 3, 4, 5, 6, 7]
-
-print(list(map(lambda number: number ** 3, number_list)))
-print(list(filter(lambda number: number % 2 == 1, number_list)))
-Notes
-
-This repository is intended for Python practice and learning.
-It is not a production data science project yet, but it can be expanded later with:
-
-NumPy examples
-Pandas examples
-Matplotlib visualizations
-Jupyter notebooks
-Data cleaning tasks
-Machine learning experiments
-Small data analysis projects
 Future improvements
-Add folders by topic
-Rename files to more descriptive names
-Add comments explaining each example
-Add Jupyter notebooks for data science practice
-Add a requirements.txt file when external libraries are used
-Add small datasets for practice
-Add examples with Pandas, NumPy and visualization libraries
+
+Planned topics to add:
+
+NumPy basics
+Pandas basics
+Data cleaning examples
+Working with CSV files
+Data visualization with Matplotlib
+Simple statistics examples
+Basic machine learning examples
+Jupyter Notebook examples
